@@ -8,3 +8,4 @@ html_content = urllib.request.urlopen("http://www.youtube.com/results?" + query_
 search_results = re.findall(r'href=\"\/watch\?v=(.{11})', html_content.read().decode())
 webbrowser.open("http://www.youtube.com/watch?v=" + search_results[0])
 
+#youtube app
